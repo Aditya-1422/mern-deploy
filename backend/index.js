@@ -20,7 +20,7 @@ const connectDb = () =>{
 
 app.listen(4000,()=>{
     connectDb();
-    console.log(`Server is working : ${process.env.PORT}`)
+    console.log(`Server is working : 4000`)
 })
 
 app.use(express.json())
