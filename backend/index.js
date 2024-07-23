@@ -29,13 +29,13 @@ app.listen(4000, () => {
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
-    origin: 'https://mern-deploy-frontend-pi.vercel.app',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
-
+app.use(cors(
+    {
+        origin: ["https://mern-deploy-frontend-pi.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 // Routes
 app.use('/api/auth', authRouter);
 app.use('/api/user', userRouter);
