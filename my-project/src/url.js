@@ -1,1 +1,1 @@
-export const URL = 'https://mern-deploy-server-phi.vercel.app/'
+export const URL = 'https://mern-deploy-server-phi.vercel.app'
