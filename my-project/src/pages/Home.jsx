@@ -1,11 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
     <div className='px-4 py-12 max-w-2xl mx-auto'>
       <h1 className='text-3xl font-bold  mb-4 text-slate-800'>
         Welcome to my Auth App!
+        
       </h1>
+      <Link to='/register'><button           className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'
+      >Register</button></Link>
       <p className='mb-4 text-slate-700'>
         This is a full-stack web application built with the MERN (MongoDB,
         Express, React, Node.js) stack. It includes authentication features that
