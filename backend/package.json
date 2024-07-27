@@ -1,16 +1,15 @@
 {
-  "name": "mern-authentication",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "npm install && npm install --perfix frontend && npm run build -- perfix frontend"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aditya-Ozalwar",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
